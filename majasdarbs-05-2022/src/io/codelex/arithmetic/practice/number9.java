@@ -4,11 +4,11 @@ public class number9 {
 
     public static void main(String[] args) {
 
-        fatAss(150, 80);
+        weightCalc(150, 80);
 
     }
 
-    public static void fatAss(float weight , float height){
+    public static void weightCalc(float weight , float height){
 
         float BMI = (weight * 703) / (height * height);
 
@@ -18,7 +18,7 @@ public class number9 {
 
         } else if (BMI > 25) {
 
-            System.out.println("You are too fat. Try smoking cigarettes. BMI: " + BMI);
+            System.out.println("You are too fat. You need to lose weight. BMI: " + BMI);
 
         } else { System.out.println("Your body weight is in the optimal range. BMI: " + BMI);}
 

@@ -12,7 +12,7 @@ public class number5 {
 
     public static void russianRoulette(){
 
-        System.out.println("I'm thinking of a number between 1-100.  If u fail u DIE.");
+        System.out.println("I'm thinking of a number between 1-100.  If u guess it u win a prize.");
 
         Random rand = new Random(); //instance of random class
         int int_random = rand.nextInt(101);

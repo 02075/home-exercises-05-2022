@@ -13,9 +13,9 @@ public class number1 {
         if (int1 == 15 || int2 == 15 || int1+int2 == 15 || int1-int2 == 15) {
             System.out.println(true);
         } else{
-            System.out.println("nesanaca losi");
+            System.out.println("U won the prize!!!");
         }
-        System.out.println("bye losi");
+        System.out.println("Goodbye.");
     }
 
 }

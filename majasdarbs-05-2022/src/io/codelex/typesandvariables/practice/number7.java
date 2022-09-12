@@ -6,7 +6,7 @@ public class number7 {
 
     public static void main(String[] args) {
 
-        numOfCaps("aJjjnbnbjFFFnJBgGGBbjnjN");
+        numOfCaps("aJjjnbnbjFFFnJBgGDGBbjnjN");
 
     }
 

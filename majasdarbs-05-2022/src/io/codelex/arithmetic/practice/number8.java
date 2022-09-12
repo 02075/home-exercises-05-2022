@@ -15,7 +15,7 @@ public class number8 {
 
         if (hours > 60) {
 
-            throw new ArithmeticException(name + "You are slaving 2 much. Go home, bruh.");
+            throw new ArithmeticException(name + "You are working 2 much. Go home.");
 
         } else if (hours > 40) {
 
