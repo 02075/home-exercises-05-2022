@@ -16,18 +16,16 @@ public class RandomNumberPositions {
 
         int searchFor = scanner.nextInt();
 
-        int i;
-        boolean foundIt = false;
-
-        for (i = 0; i < integers.length; i++) {
+        for (int i = 0; i < integers.length; i++) {
             //todo - search for integer - break when you have found what you searched for
+
+            if (integers[i] == searchFor) {
+                System.out.println("Found " + searchFor + " at index " + i);
+            }
+
         }
 
-        if (foundIt) {
-            System.out.println("Found " + searchFor + " at index " + i);
-        } else {
-            System.out.println(searchFor + " is not in the array");
-        }
+
     }
 
     private static Integer[] randomIntegers(int n) {
