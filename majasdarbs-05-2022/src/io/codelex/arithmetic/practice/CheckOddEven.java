@@ -1,14 +1,14 @@
 package io.codelex.arithmetic.practice;
 
-public class number2 {
+public class CheckOddEven {
 
     public static void main(String[] args) {
 
-        checkOddEven(68);
+        program(68);
 
     }
 
-    public static void checkOddEven(int input) {
+    public static void program(int input) {
 
         if (input % 2 == 0) {
             System.out.println("Entered Number is Even");

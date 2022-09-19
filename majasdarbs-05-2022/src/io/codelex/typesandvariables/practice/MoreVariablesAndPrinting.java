@@ -1,12 +1,8 @@
 package io.codelex.typesandvariables.practice;
-
 import java.text.DecimalFormat;
 public class MoreVariablesAndPrinting {
-
     private static final DecimalFormat df = new DecimalFormat("0.00");
     public static void main(String[] args) {
-
-
         String name = "Zed A. Shaw";
         int Age = 35;
         double Height = 74 * 2.54;  // inches
@@ -24,7 +20,5 @@ public class MoreVariablesAndPrinting {
 
         System.out.println("If I add " + Age + ", " + Height + ", and " + df.format(Weight)
                 + " I get " + df.format(Age + Height + Weight) + ".");
-
-
     }
 }
