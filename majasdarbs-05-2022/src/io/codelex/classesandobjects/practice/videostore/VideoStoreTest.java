@@ -1,6 +1,5 @@
 package io.codelex.classesandobjects.practice.videostore;
 
-import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -49,17 +48,33 @@ public class VideoStoreTest {
     }
 
     private static void rentVideo(Scanner scanner) {
-        VideoStore.printInv();
-        String mov;
-        do {
-            System.out.println("Which movie do you rent?");
-            mov = scanner.nextLine();
-
-
-        } while (true);
+        String input;
+        System.out.println("What movie do you rent?");
+        input = scanner.nextLine();
+        for (int i = 0; i < COUNT_OF_MOVIES; i++) {
+             if (Objects.equals(input, VideoStore.inventory[i].title) && VideoStore.inventory[i].status){
+                 System.out.println("You rented a movie.");
+                 VideoStore.inventory[i].rentMov();
+                 VideoStore.printInv();
+                 break;
+             } else if (Objects.equals(input, VideoStore.inventory[i].title) && !VideoStore.inventory[i].status) {
+                 System.out.println("This movie is not available.");
+                 break;
+             }
+        }
     }
 
     private static void returnVideo(Scanner scanner) {
-        //todo - return video
+        String input;
+        System.out.println("What movie do you want to return?");
+        input = scanner.nextLine();
+        for (int i = 0; i < COUNT_OF_MOVIES; i++) {
+            if (Objects.equals(input, VideoStore.inventory[i].title) && !VideoStore.inventory[i].status){
+                System.out.println("What do you rate this film?");
+                VideoStore.inventory[i].returnMov(Integer.parseInt(scanner.nextLine()));
+                VideoStore.printInv();
+                break;
+            }
+        }
     }
 }

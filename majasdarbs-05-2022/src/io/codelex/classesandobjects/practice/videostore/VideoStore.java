@@ -7,9 +7,9 @@ public class VideoStore {
 
     public static void printInv(){
         System.out.println("Movie store contains:");
-        System.out.println("Movie: " + inventory[0].title+ ", rating: " + inventory[0].rating + ", status: " + inventory[0].status);
-        System.out.println("Movie: " + inventory[1].title+ ", rating: " + inventory[1].rating + ", status: " + inventory[0].status);
-        System.out.println("Movie: " + inventory[2].title+ ", rating: " + inventory[2].rating + ", status: " + inventory[0].status + "\n");
+        System.out.println("Movie: " + inventory[0].title+ ", average user rating: " + inventory[0].getAvgRating() + ", available: " + inventory[0].status);
+        System.out.println("Movie: " + inventory[1].title+ ", average user rating: " + inventory[1].getAvgRating() + ", available: " + inventory[1].status);
+        System.out.println("Movie: " + inventory[2].title+ ", average user rating: " + inventory[2].getAvgRating() + ", available: " + inventory[2].status + "\n");
     }
 
 }

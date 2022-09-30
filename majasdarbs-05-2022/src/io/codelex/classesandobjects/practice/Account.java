@@ -21,8 +21,10 @@ public class Account {
         return balance;
     }
 
+
+
     @Override
     public String toString() {
-        return owner + " balance: " + balance;
+        return owner + " balance: $" + balance;
     }
 }
